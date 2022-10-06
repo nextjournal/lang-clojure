@@ -1,9 +1,8 @@
 import './style.css'
 import {EditorView, basicSetup, minimalSetup} from 'codemirror'
-import {clojure} from './src/clojure.ts'
+import {clojure} from './../src/clojure.ts'
 
-new EditorView({
-  doc: `(ns foo.bar
+const doc = `(ns foo.bar
   "this is a nice ns"
   (:require [cloure.string :as str]))
 
@@ -24,9 +23,11 @@ new EditorView({
     a b
     true false
     :always 2
-    'else nil)`,
+    'else nil)`
 
-  extensions: [basicSetup,
-               clojure()],
+
+new EditorView({
+  doc: doc,
+  extensions: [basicSetup, clojure()],
   parent: document.querySelector('#app')
 }).focus()

@@ -5,8 +5,8 @@
   "scripts": {
     "test": "cm-runtests",
     "prepare": "cm-buildhelper src/clojure.ts",
-    "dev": "vite",
-    "build": "vite build --outDir ./out",
+    "dev": "vite demo",
+    "build": "vite build --outDir ./../out demo",
     "preview": "vite preview"
   },
   "keywords": [
