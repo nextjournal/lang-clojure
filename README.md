@@ -20,7 +20,7 @@ highlighting and indentation information.</p>
 
 ## Try it
 
-https://nextjournal.github.io/clojure-lang
+https://nextjournal.github.io/lang-clojure
 
 ## Contribute
 

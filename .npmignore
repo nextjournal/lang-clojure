@@ -1,5 +1,5 @@
-node_modules
-dist
+.github
 .idea
+demo
 out
 lang-clojure-*.tgz
