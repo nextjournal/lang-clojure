@@ -6,7 +6,7 @@
     "test": "cm-runtests",
     "prepare": "cm-buildhelper src/clojure.ts",
     "dev": "vite demo",
-    "build": "vite build --outDir ./../out demo",
+    "build": "vite build --outDir './../out' --base './' demo",
     "preview": "vite preview"
   },
   "keywords": [
