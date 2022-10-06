@@ -22,13 +22,13 @@ jobs:
       - name: 🛎 Checkout
         uses: actions/checkout@v3
 
-#      - name: 🔐 Google Auth
-#        uses: google-github-actions/auth@v0
-#        with:
-#          credentials_json: ${{ secrets.GCLOUD_SERVICE_KEY }}
-#
-#      - name: 🔧 Setup Google Cloud SDK
-#        uses: google-github-actions/setup-gcloud@v0.3.0
+      - name: 🔐 Google Auth
+        uses: google-github-actions/auth@v0
+        with:
+          credentials_json: ${{ secrets.GCLOUD_SERVICE_KEY }}
+
+      - name: 🔧 Setup Google Cloud SDK
+        uses: google-github-actions/setup-gcloud@v0.3.0
 
       - name: 🧶 Yarn Install
         run: yarn install
@@ -36,8 +36,8 @@ jobs:
       - name: 🧶 Yarn Build
         run: yarn build
 
-#      - name: 📠 Copy static build to bucket under SHA
-#        run: gsutil cp -r public gs://nextjournal-snapshots/clojure-mode/build/${{ github.sha }}
+      - name: 📠 Copy static build to bucket under SHA
+        run: gsutil cp -r out gs://nextjournal-snapshots/lang-clojure/build/${{ github.sha }}
 
       - name: 📠 Copy static build to GitHub Pages
         if: ${{ github.ref == 'refs/heads/main' }}
@@ -46,22 +46,12 @@ jobs:
           branch: gh-pages     # The branch the action should deploy to.
           folder: out          # The folder the action should deploy.
 
-#      - name: ✅ Add link to Clojure Mode Demo
-#        uses: Sibz/github-status-action@v1
-#        with:
-#          authToken: ${{secrets.GITHUB_TOKEN}}
-#          context: 'CI / Static App / Clojure Mode'
-#          description: 'Ready'
-#          state: 'success'
-#          sha: ${{github.event.pull_request.head.sha || github.sha}}
-#          target_url: https://snapshots.nextjournal.com/clojure-mode/build/${{ github.sha }}
-
-#      - name: ✅ Add link to LiveDoc Demo
-#        uses: Sibz/github-status-action@v1
-#        with:
-#          authToken: ${{secrets.GITHUB_TOKEN}}
-#          context: 'CI / Static App / LiveDoc'
-#          description: 'Ready'
-#          state: 'success'
-#          sha: ${{github.event.pull_request.head.sha || github.sha}}
-#          target_url: https://snapshots.nextjournal.com/clojure-mode/build/${{ github.sha }}/livedoc
+      - name: ✅ Add link to Demo
+        uses: Sibz/github-status-action@v1
+        with:
+          authToken: ${{secrets.GITHUB_TOKEN}}
+          context: 'CI / Static App / Clojure Mode'
+          description: 'Ready'
+          state: 'success'
+          sha: ${{github.event.pull_request.head.sha || github.sha}}
+          target_url: https://snapshots.nextjournal.com/lang-clojure/build/${{ github.sha }}
