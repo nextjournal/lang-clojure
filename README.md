@@ -7,7 +7,7 @@ This package implements Clojure language support for the [CodeMirror](https://co
 <dt>
   <code><strong><a href="#">clojure</a></strong>() → <a href="https://codemirror.net/docs/ref#language.LanguageSupport">LanguageSupport</a></code></dt>
 
-<dd><p>Java language support.</p>
+<dd><p>Clojure language support.</p>
 </dd>
 <dt>
   <code><strong><a href="#">clojureLanguage</a></strong>: <a href="https://codemirror.net/docs/ref#language.LezerLanguage">LezerLanguage</a></code></dt>
@@ -17,3 +17,25 @@ parser</a>, extended with
 highlighting and indentation information.</p>
 </dd>
 </dl>
+
+## Try it
+
+https://nextjournal.github.io/clojure-lang
+
+## Contribute
+
+```
+yarn install
+```
+
+Run demo locally
+
+```
+yarn dev
+```
+
+Build package
+
+```
+yarn prepare
+```
