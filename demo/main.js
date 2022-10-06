@@ -6,6 +6,14 @@ const doc = `(ns foo.bar
   "this is a nice ns"
   (:require [cloure.string :as str]))
 
+['a
+ 'b
+ 'c]
+
+{:a 1
+ :b 2
+ :c [3 4]}
+
 ;; # TODO:
 ;; - [x] basic syntax
 ;; - [x] syntax highlighting

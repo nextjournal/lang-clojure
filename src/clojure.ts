@@ -18,9 +18,10 @@ export const clojureLanguage = LRLanguage.define({
                  "Discard!": tags.comment,
                  Number: tags.number,
                  StringContent: tags.string,
-                 "\"\\\"\"": tags.string, //  need to pass something, that returns " when being parsed as JSON
+                 "\"\\\"\"": tags.string, // need to pass something, that returns " when being parsed as JSON
                  Keyword: tags.atom,
                  Symbol: tags.keyword,
+                 "'": tags.keyword, // quote
                  Nil: tags.null,
                  LineComment: tags.lineComment,
                  RegExp: tags.regexp
@@ -38,12 +39,7 @@ export const clojureLanguage = LRLanguage.define({
 //         BlockComment: () => null,
 //         Statement: continuedIndent({except: /^{/})
       }),
-      foldNodeProp.add({
-      // TODO:
-//         ["Block SwitchBlock ClassBody ElementValueArrayInitializer ModuleBody EnumBody " +
-//          "ConstructorBody InterfaceBody ArrayInitializer"]: foldInside,
-//         BlockComment(tree) { return {from: tree.from + 2, to: tree.to - 2} }
-      })
+      foldNodeProp.add({["Vector Map List"]: foldInside})
     ]
   }),
   languageData: {

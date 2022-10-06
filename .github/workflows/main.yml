@@ -50,7 +50,7 @@ jobs:
         uses: Sibz/github-status-action@v1
         with:
           authToken: ${{secrets.GITHUB_TOKEN}}
-          context: 'CI / Static App / Clojure Mode'
+          context: 'CI / Static App / lang clojure'
           description: 'Ready'
           state: 'success'
           sha: ${{github.event.pull_request.head.sha || github.sha}}
