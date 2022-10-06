@@ -1,6 +1,11 @@
 import './style.css'
 import {EditorView, basicSetup, minimalSetup} from 'codemirror'
-import {clojure} from './../src/clojure.ts'
+import {clojure, clojureLanguage} from './../src/clojure.ts'
+
+// test published package, add "lang-clojure": "0.1.0-alpha.1" to package.json
+//import {clojure, clojureLanguage} from 'lang-clojure'
+
+console.log(clojure, clojureLanguage)
 
 const doc = `(ns foo.bar
   "this is a nice ns"

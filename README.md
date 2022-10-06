@@ -34,7 +34,7 @@ Run demo locally
 yarn dev
 ```
 
-Build package
+Build dist
 
 ```
 yarn prepare
