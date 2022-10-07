@@ -51,7 +51,6 @@ export const clojureLanguage = LRLanguage.define({
 
   languageData: {commentTokens: {line: ";;"}}})
 
-/// Java language support.
 export function clojure() {
   return new LanguageSupport(clojureLanguage)
 }
