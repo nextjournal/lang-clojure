@@ -142,6 +142,13 @@
   dependencies:
     "@lezer/common" "^1.0.0"
 
+"@nextjournal/lezer-clojure@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@nextjournal/lezer-clojure/-/lezer-clojure-1.0.0.tgz#0e7ff75f8d0fabed36d26b9f6b5f00d8a9f385e6"
+  integrity sha512-VZyuGu4zw5mkTOwQBTaGVNWmsOZAPw5ZRxu1/Knk/Xfs7EDBIogwIs5UXTYkuECX5ZQB8eOB+wKA2pc7VyqaZQ==
+  dependencies:
+    "@lezer/lr" "^1.0.0"
+
 "@types/mocha@^9.1.1":
   version "9.1.1"
   resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-9.1.1.tgz#e7c4f1001eefa4b8afbd1eee27a237fee3bf29c4"
@@ -750,13 +757,6 @@ jszip@^3.10.0:
     pako "~1.0.2"
     readable-stream "~2.3.6"
     setimmediate "^1.0.5"
-
-lezer-clojure@1.0.0-rc.2:
-  version "1.0.0-rc.2"
-  resolved "https://registry.yarnpkg.com/lezer-clojure/-/lezer-clojure-1.0.0-rc.2.tgz#cec59eafdd150bec9a5524214bc201b4ee117575"
-  integrity sha512-IdEwD9cq/PSTD3TBYHosqQQu4sKiBCdAcqucGimR0BwKRMnaPAjSgnj/JJ3ykmCwHf1pRHdVyr23gVaxYx2Tvg==
-  dependencies:
-    "@lezer/lr" "^1.0.0"
 
 lie@~3.3.0:
   version "3.3.0"

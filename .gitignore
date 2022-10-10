@@ -2,4 +2,4 @@ node_modules
 dist
 .idea
 out
-lang-clojure-*.tgz
+nextjournal-lang-clojure-*.tgz

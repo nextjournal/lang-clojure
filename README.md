@@ -1,4 +1,4 @@
-# lang-clojure [![NPM version](https://img.shields.io/npm/v/lang-clojure.svg)](https://www.npmjs.org/package/lang-clojure)
+# @nextjournal/lang-clojure [![NPM version](https://img.shields.io/npm/v/@nextjournal/lang-clojure.svg)](https://www.npmjs.com/package/@nextjournal/lang-clojure)
 
 This package implements Clojure language support for the [CodeMirror](https://codemirror.net/) code editor.
 

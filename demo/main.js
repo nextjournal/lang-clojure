@@ -2,8 +2,8 @@ import './style.css'
 import {EditorView, basicSetup, minimalSetup} from 'codemirror'
 import {clojure, clojureLanguage} from './../src/clojure.ts'
 
-// test published package, add "lang-clojure": "0.1.0-alpha.1" to package.json
-//import {clojure, clojureLanguage} from 'lang-clojure'
+// test published package, add "@nextjournal/lang-clojure": "x.y.z" to package.json
+// import {clojure, clojureLanguage} from '@nextjournal/lang-clojure'
 
 console.log(clojure, clojureLanguage)
 

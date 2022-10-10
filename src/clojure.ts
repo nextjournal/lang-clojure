@@ -1,4 +1,4 @@
-import {parser, props} from "lezer-clojure"
+import {parser, props} from "@nextjournal/lezer-clojure"
 import {NodeProp, SyntaxNode, NodeType} from "@lezer/common"
 import {styleTags, tags} from "@lezer/highlight"
 import {indentNodeProp, foldNodeProp, foldInside, LRLanguage, LanguageSupport, TreeIndentContext} from "@codemirror/language"
